@@ -1,0 +1,22 @@
+#データベース作成
+create database samplebbs;
+
+#データベース切り替え
+use samplebbs;
+
+#テーブル作成
+create table user(
+id varchar(64) primary key,
+password text not null,
+name text not null,
+entry_datetime datetime not null
+);
+
+#テーブル作成
+create table article(
+id int primary key auto_increment,
+title text not null,
+body text not null,
+editor_id varchar(64) not null,
+entry_datetime datetime not null
+);
