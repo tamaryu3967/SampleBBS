@@ -11,8 +11,8 @@ public class DriverAccessor {
 
 	private final static String DRIVER_URL="jdbc:mysql://localhost:3306/samplebbs?characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=GMT%2B9:00&rewriteBatchedStatements=true";
 	private final static String DRIVER_NAME="com.mysql.cj.jdbc.Driver";
-	private final static String USER_NAME="root";
-	private final static String PASSWORD="mysqlroot";
+	private final static String USER_NAME="samplebbs";
+	private final static String PASSWORD="bbspass";
 
 	public Connection createConnection(){
 		try{
