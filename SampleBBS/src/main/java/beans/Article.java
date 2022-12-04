@@ -3,12 +3,13 @@ package beans;
 import java.io.Serializable;
 import java.sql.Timestamp;
 
+//記事を表すクラス
 public class Article implements Serializable{ //implements Serializableが必要
-	private int id;
-	private String title;
-	private String body;
-	private String editorId;
-	private Timestamp entryDatetime;
+	private int id; //すべての記事で一意な番号
+	private String title; //タイトル
+	private String body; //本文
+	private String editorId; //著者のユーザId
+	private Timestamp entryDatetime; //登録日時
 
 	//カラのコンストラクタが必要
 	public Article() {
