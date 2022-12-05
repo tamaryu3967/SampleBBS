@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Login page</title>
+<!-- スタイルシートの読み込み （src/main/webapp/css/style.css を参照）-->
 <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
 </head>
 <body>
