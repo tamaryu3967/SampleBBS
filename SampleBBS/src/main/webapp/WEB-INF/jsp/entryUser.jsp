@@ -8,7 +8,6 @@
 </head>
 <body>
 <label>Tiny BBS ユーザ登録</label>
-	<%out.append(System.getenv("user.dir")); %>
 	<form action="./EntryUserServlet" method="post">
 		<p><label>ログインID：<input type="text" name="id" size="40" maxlength="20"></label></p>
 		<p><label>名前：<input type="text" name="name" size="40" maxlength="20"></label></p>
