@@ -3,11 +3,12 @@ package beans;
 import java.io.Serializable;
 import java.sql.Date;
 
+//ユーザを表すクラス
 public class User implements Serializable{ //implements Serializableが必要
-	private String id;
-	private String password;
-	private String name;
-	private Date entryDatetime;
+	private String id; //一意なユーザId
+	private String password; //ログイン用パスワード
+	private String name; //氏名
+	private Date entryDatetime; //登録日時
 
 	//カラのコンストラクタが必要
 	public User() {
