@@ -22,7 +22,7 @@
 		<p><label>現在のパスワード：<input type="password" name="currentPassword" size="40" maxlength="20"></label></p>
 		<p><label>新しいパスワード：<input type="password" name="newPassword1" size="40" maxlength="20"></label></p>
 		<p><label>確認用パスワード：<input type="password" name="newPassword2" size="40" maxlength="20"></label></p>
-		<p><input type="submit" value="登録"></p>
+		<p><input type="submit" value="更新"></p>
 	</form>
 </body>
 </html>

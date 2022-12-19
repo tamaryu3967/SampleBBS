@@ -72,7 +72,12 @@ public class UpdateUserServletAns extends HttpServlet {
 		
 		//newUserでDBを更新
 		dao.updateUser(newUser);
+		
+		//更新後のユーザを取得
+		user = dao.getUserById(userId);
 
+		//requestにユーザをセット
+		request.setAttribute("user", user);
 
 		//ユーザ更新ページに戻す．
 		RequestDispatcher dispatcher = request.getRequestDispatcher("./WEB-INF/jsp/updateUserAns.jsp");

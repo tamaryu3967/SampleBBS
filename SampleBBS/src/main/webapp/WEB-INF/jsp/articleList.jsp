@@ -17,6 +17,9 @@
 </head>
 <body>
 	<label>記事一覧</label><br><br>
+	<!-- UpdateUserPageServletAnsにハイパーリンク．
+	ハイパーリンクによるアクセスは，GETアクセスとなり，サーブレットのdoGet()が呼ばれる． -->
+	<a href = ./UpdateUserPageServletAns>ユーザ情報更新</a><br><br>
 	<!-- EntryArticlePageServletにハイパーリンク．
 	ハイパーリンクによるアクセスは，GETアクセスとなり，サーブレットのdoGet()が呼ばれる． -->
 	<a href = ./EntryArticlePageServlet>新規記事登録</a><br><br>
