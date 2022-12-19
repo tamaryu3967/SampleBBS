@@ -7,7 +7,8 @@
 <title>Login page</title>
 </head>
 <body>
-<label>Tiny BBS ユーザ登録</label>
+<label>Tiny BBS ユーザ情報アップデート</label>
+
 	<!--  EntryUserServletにデータを送信するformを宣言する. 登録処理なので，methodはpostを指定．
 	後はentryArticle.jspと同様なので，そちらのコメントを参考にするとよい．-->
 	
