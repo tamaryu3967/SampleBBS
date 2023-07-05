@@ -5,6 +5,9 @@ mysql -u root -p
 #データベース作成
 create database samplebbs;
 
+#データベースを確認
+show databases;
+
 #ユーザ作成
 create user 'samplebbs'@'localhost' identified by 'bbspass';
 
@@ -20,6 +23,9 @@ mysql -u samplebbs -p
 
 #データベース切り替え
 use samplebbs;
+
+#テーブルを確認
+show tables;
 
 #テーブル作成
 create table user(
@@ -37,3 +43,6 @@ body text not null,
 editor_id varchar(64) not null,
 entry_datetime datetime not null
 );
+
+#テーブルの構造を確認する
+desc article
