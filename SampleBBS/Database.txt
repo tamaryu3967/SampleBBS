@@ -45,4 +45,4 @@ entry_datetime datetime not null
 );
 
 #テーブルの構造を確認
-desc article
+desc article;
