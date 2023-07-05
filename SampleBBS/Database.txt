@@ -44,5 +44,5 @@ editor_id varchar(64) not null,
 entry_datetime datetime not null
 );
 
-#テーブルの構造を確認する
+#テーブルの構造を確認
 desc article
