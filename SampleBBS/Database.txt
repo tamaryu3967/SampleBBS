@@ -1,5 +1,22 @@
+#ルートユーザでmysqlにログイン
+mysql -u root -p
+パスワード：dbroot
+
 #データベース作成
 create database samplebbs;
+
+#ユーザ作成
+create user 'samplebbs'@'localhost' identified by 'bbspass';
+
+#ユーザに権限を付与
+grant all on samplebbs.* to 'samplebbs'@'localhost';
+
+#一度exit
+exit
+
+#samplebbs ユーザでログイン
+mysql -u samplebbs -p
+パスワード：bbspass
 
 #データベース切り替え
 use samplebbs;
