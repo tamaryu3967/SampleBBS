@@ -1,5 +1,5 @@
-#ルートユーザでmysqlにログイン
-mysql -u root -p
+#ルートユーザでmariaDBにログイン
+mariadb -u root -p (または，mysql -u root -p)
 パスワード：dbroot
 
 #データベース作成
@@ -46,3 +46,28 @@ entry_datetime datetime not null
 
 #テーブルの構造を確認
 desc article;
+
+#テーブルのデータを確認（user）
+select * from user;
+
+#テーブルのデータを確認(article)
+select * from article;
+
+#テーブルのデータを削除したい場合(articleテーブルから，idが1の記事を削除)
+delete from article where id=1;
+
+#テーブルのデータを更新したい場合(articleテーブルの，idが2の記事のbodyを"aaa"に更新)
+update article set body="aaa" where id=2;
+
+#DBのdump(バックアップ)を作成する
+#下記の操作はログアウトしてから行う
+mysqldump --default-character-set=utf8 -u samplebbs -p samplebbs>samplebbs_dump.sql
+パスワード入力
+自身のユーザフォルダにdumpファイルが生成される
+
+#dumpファイルからDBを復元する
+#あらかじめ，データベースの作成まで実施しておく
+#下記の操作はログアウトして行う
+mysql -u samplebbs -p samplebbs<samplebbs_dump.sql
+パスワード入力
+samplebbsの内容がdumpファイルから復元される
