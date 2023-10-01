@@ -1,4 +1,4 @@
-#ルートユーザでmariaDBにログイン
+#ルートユーザでmysqlにログイン
 mariadb -u root -p (または，mysql -u root -p)
 パスワード：dbroot
 
@@ -68,6 +68,7 @@ mysqldump --default-character-set=utf8 -u samplebbs -p samplebbs>samplebbs_dump.
 #dumpファイルからDBを復元する
 #あらかじめ，データベースの作成まで実施しておく
 #下記の操作はログアウトして行う
+#また，samplebbs_dump.sqlがあるフォルダに移動してからコマンドを実行する
 mysql -u samplebbs -p samplebbs<samplebbs_dump.sql
 パスワード入力
 samplebbsの内容がdumpファイルから復元される
